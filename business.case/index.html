@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="no-referrer" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://kit.fontawesome.com/7f9d417c3a.js" crossorigin="anonymous"></script>
+    <title>Business Case</title>
+</head>
+
+<body>
+    <header>
+        <nav class="d-flex flex-column align-items-center col-12 pt-2">
+            <img src="img/logo.svg" alt="cardealer logo" />
+            <ul class="d-flex mr-5 mt-3 font-weight-bold">
+                <li><a class="text-white col-4" href="#">Accueil</a></li>
+                <li><a class="text-white col-4" href="#">A propos</a></li>
+                <li><a class="text-white col-4" href="#">Contact</a></li>
+                <li><a class="text-white col-4 text-uppercase" href="#">faq</a></li>
+            </ul>
+        </nav>
+        <div class="container text-left text-white">
+            <h4 class="font-weight-bold">Economisez en moyenne</h4>
+            <h1 class="font-weight-bold text-uppercase">
+                de <span>5%</span> a <span>20%</span> sur le<br />prix initial
+            </h1>
+            <a class="btnWhite" href="#who">Comment ça marche</a>
+            <a class="headerBtn ml-1" href="#">Parcourir les annonces</a>
+        </div>
+    </header>
+    <article id="searchBox" class="text-center">
+        <div class="text-center mt-3">
+            <h5 class="mb-3">Trouvez votre véhicule</h5>
+        </div>
+        <div class="d-flex col-12 align-items-center justify-content-center mr-5">
+            <div class="dropdown ml-3">
+                <button class="btn btn-light dropdownbtn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Catégorie
+          </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </div>
+
+            <div class="dropdown ml-4">
+                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Marque
+          </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </div>
+
+            <div class="dropdown ml-4">
+                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Modèle
+          </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </div>
+
+            <div class="dropdown ml-4">
+                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Carburant
+          </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+            </div>
+        </div>
+        <form>
+            <div id="yearKm" class="d-flex align-items-center justify-content-center col-12 col-md-12">
+                <input class="mt-2 col-2 w-25 text-left pl-2 pt-1 pb-1 mr-2 ml-2" type="range" min="1950" max="2020" value="2015" />
+                <input class="mt-2 col-2 w-50 text-left pl-2 pt-1 pb-1 mr-2 ml-2" type="text" placeholder="Année Max" />
+                <input class="mt-2 col-3 w-50 text-left pl-2 pt-1 pb-1 mr-2 ml-2" type="text" placeholder="Kilométrage Mini" />
+                <input class="mt-2 col-3 w-50 text-left pl-2 pt-1 pb-1 mr-2 ml-2" type="text" placeholder="Kilométrage Maxi" />
+            </div>
+            <div id="price" class="d-flex align-items-center justify-content-center col-12 col-md-12">
+                <input class="mt-2 mb-3 col-2 w-25 text-left pl-2 pt-1 pb-1 mr-2 ml-2" type="text" placeholder="Prix Min" />
+                <input class="mt-2 mb-3 col-2 w-25 text-left pl-2 pt-1 pb-1 mr-2 ml-2" type="text" placeholder="Prix Maxi" />
+            </div>
+            <div id="btnSearch">
+                <a class="headerBtn text-center" href="#">Rechercher</a>
+            </div>
+        </form>
+    </article>
+
+    <section id="who" class="container">
+        <h1 class="text-center">Comment<br>ça marche ?</h1>
+        <ul class="box pt-5 pb-5">
+            <li>
+                <img id="img1" src="img/icons/carsearch.svg" alt="paperasse" />
+                <div>
+                    <h3>Recherche</h3>
+                    <p>
+                        La recherche de votre véhicule sera la seule étape que vous aurez a effectuer durant tout le processus de vente.
+                    </p>
+                </div>
+            </li>
+            <li>
+                <img id="img2" src="img/icons/cardeal.svg" alt="paperasse" />
+                <div>
+                    <h3>Négociation</h3>
+                    <p>
+                        Nos experts se chargent ensuite de vous negocier le vehicule en question au tarif le plus intéressant possible.
+                    </p>
+                </div>
+            </li>
+            <li>
+                <img src="img/icons/vectorpaperasse.svg" alt="paperasse" />
+                <div>
+                    <h3>Administratif</h3>
+                    <p>
+                        Tout l’administratif est traité par nos experts, seulement quelques documents vous seront demandés.
+                    </p>
+                </div>
+            </li>
+            <li>
+                <img src="img/icons/vectorkey.svg" alt="clé" />
+                <div>
+                    <h3>Livraison</h3>
+                    <p>
+                        Elle etait derriere votre écran et maintenant devant vos yeux, sportive ou citadine, Profitez !
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section id="annonces" class="container">
+        <h1 class="mb-2 text-center">Les annonces<br>populaires</h1>
+        <article class="mt-5 row justify-content-around align-items-center">
+            <div id="carCard">
+                <img src="/img/car/exempleCar/front.jpg" alt="image clio rs" />
+                <div id="infoSup" class="d-flex justify-content-around pt-3">
+                    <p><i class="fas fa-gas-pump"></i> Essence</p>
+                    <p><i class="fas fa-road"></i> 89 000 Km</p>
+                    <p><i class="fas fa-history"></i> 2014</p>
+                </div>
+                <div>
+                    <h3 class="text-center ml-2 mt-2">Clio 4 RS</h3>
+                    <p class="text-center mt-2">
+                        Vehicule entretenu en temps et en heure, temps de chauffe toujours respectés...
+                    </p>
+                </div>
+                <div class="d-flex justify-content-between pb-3">
+                    <p><i class="ml-2 fas fa-eye"></i> 56</p>
+                    <a href="#" class="cardBtn text-center pl-2 pr-2 pt-2 pb-2">Plus<br />d'informations</a
+            >
+            <h4 class="mr-2">19500€</h4>
+          </div>
+        </div>
+
+        <div id="carCard">
+          <img src="/img/car/exempleCar/front.jpg" alt="image clio rs" />
+          <div id="infoSup" class="d-flex justify-content-around pt-3">
+            <p><i class="fas fa-gas-pump"></i> Essence</p>
+            <p><i class="fas fa-road"></i> 89 000 Km</p>
+            <p><i class="fas fa-history"></i> 2014</p>
+          </div>
+          <div>
+            <h3 class="text-center ml-2 mt-2">Clio 4 RS</h3>
+            <p class="text-center mt-2">
+              Vehicule entretenu en temps et en heure, temps de chauffe toujours
+              respectés...
+            </p>
+          </div>
+          <div class="d-flex justify-content-between pb-3">
+            <p><i class="ml-2 fas fa-eye"></i> 56</p>
+            <a href="#" class="cardBtn text-center pl-2 pr-2 pt-2 pb-2"
+              >Plus<br />d'informations</a
+            >
+            <h4 class="mr-2">19500€</h4>
+          </div>
+        </div>
+
+        <div id="carCard">
+          <img src="/img/car/exempleCar/front.jpg" alt="image clio rs" />
+          <div id="infoSup" class="d-flex justify-content-around pt-3">
+            <p><i class="fas fa-gas-pump"></i> Essence</p>
+            <p><i class="fas fa-road"></i> 89 000 Km</p>
+            <p><i class="fas fa-history"></i> 2014</p>
+          </div>
+          <div>
+            <h3 class="text-center ml-2 mt-2">Clio 4 RS</h3>
+            <p class="text-center mt-2">
+              Vehicule entretenu en temps et en heure, temps de chauffe toujours
+              respectés...
+            </p>
+          </div>
+          <div class="d-flex justify-content-between pb-3">
+            <p><i class="ml-2 fas fa-eye"></i> 56</p>
+            <a href="#" class="cardBtn text-center pl-2 pr-2 pt-2 pb-2"
+              >Plus<br />d'informations</a
+            >
+            <h4 class="mr-2">19500€</h4>
+          </div>
+        </div>
+
+        <div id="carCard">
+          <img src="/img/car/exempleCar/front.jpg" alt="image clio rs" />
+          <div id="infoSup" class="d-flex justify-content-around pt-3">
+            <p><i class="fas fa-gas-pump"></i> Essence</p>
+            <p><i class="fas fa-road"></i> 89 000 Km</p>
+            <p><i class="fas fa-history"></i> 2014</p>
+          </div>
+          <div>
+            <h3 class="text-center ml-2 mt-2">Clio 4 RS</h3>
+            <p class="text-center mt-2">
+              Vehicule entretenu en temps et en heure, temps de chauffe toujours
+              respectés...
+            </p>
+          </div>
+          <div class="d-flex justify-content-between pb-3">
+            <p><i class="ml-2 fas fa-eye"></i> 56</p>
+            <a href="#" class="cardBtn text-center pl-2 pr-2 pt-2 pb-2"
+              >Plus<br />d'informations</a
+            >
+            <h4 class="mr-2">19500€</h4>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <div id="contactTitle">
+      <h1 class="text-center container">Coordonnées<br><span class="text-danger">&</span><br>Contact</h1>
+    </div>
+    <section id="contact" class="d-flex align-items-center justify-content-around container">
+<div>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.3751816153276!2d4.56377571602325!3d45.50252557910149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f5009ab859e85b%3A0xe8e564bcc85701d1!2sZR%20CAR!5e0!3m2!1sfr!2sfr!4v1603963026805!5m2!1sfr!2sfr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    </div>
+      <div class="row justify-content-center col-12">
+        <form class="d-flex flex-column text-center justify-content-center" action="" name="contact-form" id="contact-form">
+          <h3>Besoins d'une<br>information ?</h3>
+            <div>
+          <input type="radio" name="client" value="Particulier">
+          <p>Particulier</p>
+        </div>
+        <div>
+          <input type="radio" name="professional">
+          <p>Professionel</p>
+        </div>
+          <div>
+          <input class="mb-3" type="text" name="name" placeholder="Nom">
+        </div>
+        <div>
+          <input class="mb-3" type="text" name="surname" placeholder="Prénom">
+        </div>
+        <div>
+          <input class="mb-3" type="email" name="email" placeholder="E-mail">
+        </div>
+        <div>
+          <textarea placeholder="Votre Message" rows="5" cols="18"></textarea>
+        </div>
+        <div>
+          <input class="mb-3" type="submit" value="Envoyer">
+        </div>
+        </form>
+      </div>
+
+      <article id="contactLink" class="container">
+        <ul class="d-flex flex-column align-items-lg-start">
+          <li class="row align-items-center">
+            <i class="fas fa-phone-alt"></i>
+            <h4>04.77.31.25.36</h4>
+          </li>
+
+          <li id="bigLi" class="row align-items-center">
+            <i class="fas fa-envelope"></i>
+            <h4>centrautocass@gmail.com</h4>
+          </li>
+
+          <li class="row align-items-center">
+            <i class="fab fa-facebook"></i>
+            <h4>Facebook</h4>
+          </li>
+        </ul>
+      </article>
+    </section>
+    <footer class="container">
+      <ul class="list-unstyled row justify-content-center align-items-center mt-5">
+        <li class="mr-5">
+          <a href="">
+          <p>Politique de confidentialité</p>
+          </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <p>Mentions Légales</p>
+                        </a>
+                    </li>
+                    </ul>
+                    </footer>
+
+</body>
+
+</html>
