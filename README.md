@@ -1,1 +1,4 @@
-![BMW Showroom](img/bmwShowroom.jpg)
+## Business Case
+
+![BMW Showroom](img/bmwreadme.jpg)
+
