@@ -16,65 +16,75 @@
 
 <body>
     <header>
-        <nav class="d-flex flex-column align-items-center col-12 pt-2">
-            <img src="img/logo.svg" alt="cardealer logo" />
-            <ul class="d-flex mr-5 mt-3 font-weight-bold">
-                <li><a class="text-white col-4 col-lg-6" href="#">Accueil</a></li>
-                <li><a class="text-white col-4 col-lg-6" href="#">A propos</a></li>
-                <li><a class="text-white col-4 col-lg-6" href="#">Contact</a></li>
-                <li><a class="text-white col-4 text-uppercase col-lg-6" href="#">faq</a></li>
-            </ul>
-        </nav>
-    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-dark align-items-center justify-content-around">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="d-flex flex-column align-items-center">
+        <img src="img/logo.svg" alt="cardealer logo" />
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link active text-white" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link text-white" href="#">Features</a>
+            <a class="nav-item nav-link text-white" href="#">Pricing</a>
+            <a class="nav-item nav-link text-white" href="#">Disabled</a>
+          </div>
+        </div>
+      </div>
+      </nav>
+    <div class="container align-items-center" id="title">
             <h1 class="text-white w-50 col">Trouvez votre <span>futur vehicule</span></h1>
     </div>
     </header>
 
-    <section id="search" class="container d-flex justify-content-center mt-3">
+    <section id="search" class="container d-flex mt-3">
 
-      <ul class="list-unstyled d-flex flex-column col-7 col col-sm-8 col-lg-5 text-center justify-content-center mr-1">
-      <li class="nav-item dropdown bg-white">
-        <a class="nav-link dropdown-toggle text-dark btn mb-2 mt-4 col" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Marque</a>
-        <div class="dropdown-menu">
+      <ul class="list-unstyled d-flex flex-column col-10 col col-sm-8 col-lg-5 text-center justify-content-center mr-1">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-white btn mb-2 mt-4 col" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Marque</a>
+        <div class="dropdown-menu bg-dark">
+          <a class="dropdown-item text-white" href="#">Volkswagen</a>
+          <a class="dropdown-item text-white" href="#">Audi</a>
+          <a class="dropdown-item text-white" href="#">Seat</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-white btn mb-2 col" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Modèle</a>
+        <div class="dropdown-menu bg-dark">
           <a class="dropdown-item" href="#">Action</a>
           <a class="dropdown-item" href="#">Another action</a>
           <a class="dropdown-item" href="#">Something else here</a>
         </div>
       </li>
-      <li class="nav-item dropdown bg-white">
-        <a class="nav-link dropdown-toggle text-dark btn mb-2 col" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Modèle</a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-white btn mb-2 col" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Carburant</a>
+        <div class="dropdown-menu text-center bg-dark">
+          <a class="dropdown-item text-center" href="#">Action</a>
+          <a class="dropdown-item text-center" href="#">Another action</a>
+          <a class="dropdown-item text-center" href="#">Something else here</a>
         </div>
       </li>
-      <li class="nav-item dropdown bg-white">
-        <a class="nav-link dropdown-toggle text-dark btn mb-2 col" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Carburant</a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-      <li class="d-flex flex-column justify-content-center align-items-center">
-        <label class="font-weight-bold text-dark mt-4" for="range-year">Année</label>
+      <li class="d-flex flex-column align-items-center">
+        <label class="font-weight-bold text-white mt-4" for="range-year">Année</label>
         <input type="range" class="range mb-3" id="rangeYear" name="range-year" min="1980" max="2021" step="1" value="2001"/>
-        <output class="font-weight-bold text-dark"></output>
+        <output class="font-weight-bold text-white"></output>
+        <div class="d-flex justify-content-between">
+        </div>
     
       </li>
       <li class="d-flex flex-column justify-content-center align-items-center">
-        <label class="font-weight-bold text-dark mt-4" for="range-km">Km</label>
+        <label class="font-weight-bold text-white mt-4" for="range-km">Km</label>
         <input type="range" class="range mb-3" name="range-km" min="0" max="400000" step="20000" value="200000"/>
-        <output class="font-weight-bold text-dark"></output>
+        <output class="font-weight-bold text-white"></output>
       </li>
       <li class="d-flex flex-column justify-content-center align-items-center">
-        <label class="font-weight-bold text-dark mt-4" for="range-price">Prix</label>
+        <label class="font-weight-bold text-white mt-4" for="range-price">Prix</label>
         <input type="range" class="range mb-3" name="range-price" min="1000" max="300000" step="200" value="150000"/>
-        <output class="font-weight-bold text-dark mb-4"></output>
+        <output class="font-weight-bold text-white mb-4"></output>
       </li>
       <li class="text-center">
-        <a type="button" class="btn searchBtn mb-4"><i class="fas fa-search"></i> Rechercher</a>
+        <a type="button" class="btn searchBtn mb-5 mt-2"><i class="fas fa-search"></i> Rechercher</a>
       </li>
     </ul>
   </section>
@@ -86,7 +96,7 @@
                 <img id="img1" src="img/icons/carsearch.svg" alt="paperasse" />
                 <div>
                     <h3 class="font-weight-bold pt-2">Recherche</h3>
-                    <p class="text-dark">
+                    <p class="text-white">
                         La recherche de votre véhicule sera la seule étape que vous aurez a effectuer durant tout le processus de vente.
                     </p>
                 </div>
@@ -95,7 +105,7 @@
                 <img id="img2" src="img/icons/cardeal.svg" alt="paperasse"/>
                 <div>
                     <h3 class="font-weight-bold">Négociation</h3>
-                    <p class="text-dark">
+                    <p class="text-white">
                         Nos experts se chargent ensuite de vous negocier le vehicule en question au tarif le plus intéressant possible.
                     </p>
                 </div>
@@ -104,7 +114,7 @@
                 <img src="img/icons/vectorpaperasse.svg" alt="paperasse" />
                 <div>
                     <h3 class="font-weight-bold pt-2">Administratif</h3>
-                    <p class="text-dark">
+                    <p class="text-white">
                         Tout l’administratif est traité par nos experts, seulement quelques documents vous seront demandés.
                     </p>
                 </div>
@@ -113,7 +123,7 @@
                 <img src="img/icons/vectorkey.svg" alt="clé" />
                 <div>
                     <h3 class="font-weight-bold pt-2">Livraison</h3>
-                    <p class="text-dark">
+                    <p class="text-white">
                         Elle etait derriere votre écran et maintenant devant vos yeux, sportive ou citadine, Profitez !
                     </p>
                 </div>
@@ -133,14 +143,14 @@
                 </div>
                 <div>
                     <h3 class="text-center ml-2 mt-2">Clio 4 RS</h3>
-                    <p class="text-center mt-2">
+                    <p class="text-center mt-2 text-white">
                         Vehicule entretenu en temps et en heure, temps de chauffe toujours respectés...
                     </p>
                 </div>
                 <div class="d-flex justify-content-between pb-3">
-                    <p><i class="ml-2 fas fa-eye"></i> 56</p>
+                    <p class="text-white"><i class="ml-2 fas fa-eye"></i> 56</p>
                     <a href="#" class="cardBtn text-center pl-2 pr-2 pt-2 pb-2">Plus<br />d'informations</a>
-            <h4 class="mr-2">19500€</h4>
+            <h4 class="mr-2 text-white">19500€</h4>
           </div>
         </div>
 
@@ -153,13 +163,13 @@
           </div>
           <div>
             <h3 class="text-center ml-2 mt-2">Clio 4 RS</h3>
-            <p class="text-center mt-2">
+            <p class="text-center mt-2 text-white">
               Vehicule entretenu en temps et en heure, temps de chauffe toujours
               respectés...
             </p>
           </div>
           <div class="d-flex justify-content-between pb-3">
-            <p><i class="ml-2 fas fa-eye"></i> 56</p>
+            <p class="text-white"><i class="ml-2 fas fa-eye"></i> 56</p>
             <a href="#" class="cardBtn text-center pl-2 pr-2 pt-2 pb-2">Plus<br />d'informations</a>
             <h4 class="mr-2">19500€</h4>
           </div>
@@ -174,13 +184,13 @@
           </div>
           <div>
             <h3 class="text-center ml-2 mt-2">Clio 4 RS</h3>
-            <p class="text-center mt-2">
+            <p class="text-center mt-2 text-white">
               Vehicule entretenu en temps et en heure, temps de chauffe toujours
               respectés...
             </p>
           </div>
           <div class="d-flex justify-content-between pb-3">
-            <p><i class="ml-2 fas fa-eye"></i> 56</p>
+            <p class="text-white"><i class="ml-2 fas fa-eye"></i> 56</p>
             <a href="#" class="cardBtn text-center pl-2 pr-2 pt-2 pb-2"
               >Plus<br />d'informations</a
             >
@@ -197,13 +207,13 @@
           </div>
           <div>
             <h3 class="text-center ml-2 mt-2">Clio 4 RS</h3>
-            <p class="text-center mt-2">
+            <p class="text-center mt-2 text-white">
               Vehicule entretenu en temps et en heure, temps de chauffe toujours
               respectés...
             </p>
           </div>
           <div class="d-flex justify-content-between pb-3">
-            <p><i class="ml-2 fas fa-eye"></i> 56</p>
+            <p class="text-white"><i class="ml-2 fas fa-eye"></i> 56</p>
             <a href="#" class="cardBtn text-center pl-2 pr-2 pt-2 pb-2">Plus<br/>d'informations</a>
             <h4 class="mr-2">19500€</h4>
           </div>
@@ -218,13 +228,13 @@
           </div>
           <div>
             <h3 class="text-center ml-2 mt-2">Clio 4 RS</h3>
-            <p class="text-center mt-2">
+            <p class="text-center mt-2 text-white">
               Vehicule entretenu en temps et en heure, temps de chauffe toujours
               respectés...
             </p>
           </div>
           <div class="d-flex justify-content-between pb-3">
-            <p><i class="ml-2 fas fa-eye"></i> 56</p>
+            <p class="text-white"><i class="ml-2 fas fa-eye"></i> 56</p>
             <a href="#" class="cardBtn text-center pl-2 pr-2 pt-2 pb-2">Plus<br/>d'informations</a>
             <h4 class="mr-2">19500€</h4>
           </div>
@@ -239,13 +249,13 @@
           </div>
           <div>
             <h3 class="text-center ml-2 mt-2">Clio 4 RS</h3>
-            <p class="text-center mt-2">
+            <p class="text-center mt-2 text-white">
               Vehicule entretenu en temps et en heure, temps de chauffe toujours
               respectés...
             </p>
           </div>
           <div class="d-flex justify-content-between pb-3">
-            <p><i class="ml-2 fas fa-eye"></i> 56</p>
+            <p class="text-white"><i class="ml-2 fas fa-eye"></i> 56</p>
             <a href="#" class="cardBtn text-center pl-2 pr-2 pt-2 pb-2">Plus<br/>d'informations</a>
             <h4 class="mr-2">19500€</h4>
           </div>
@@ -260,13 +270,13 @@
           </div>
           <div>
             <h3 class="text-center ml-2 mt-2">Clio 4 RS</h3>
-            <p class="text-center mt-2">
+            <p class="text-center mt-2 text-white">
               Vehicule entretenu en temps et en heure, temps de chauffe toujours
               respectés...
             </p>
           </div>
           <div class="d-flex justify-content-between pb-3">
-            <p><i class="ml-2 fas fa-eye"></i> 56</p>
+            <p class="text-white"><i class="ml-2 fas fa-eye"></i> 56</p>
             <a href="#" class="cardBtn text-center pl-2 pr-2 pt-2 pb-2">Plus<br/>d'informations</a>
             <h4 class="mr-2">19500€</h4>
           </div>
@@ -281,13 +291,13 @@
           </div>
           <div>
             <h3 class="text-center ml-2 mt-2">Clio 4 RS</h3>
-            <p class="text-center mt-2">
+            <p class="text-center mt-2 text-white">
               Vehicule entretenu en temps et en heure, temps de chauffe toujours
               respectés...
             </p>
           </div>
           <div class="d-flex justify-content-between pb-3">
-            <p><i class="ml-2 fas fa-eye"></i> 56</p>
+            <p class="text-white"><i class="ml-2 fas fa-eye"></i> 56</p>
             <a href="#" class="cardBtn text-center pl-2 pr-2 pt-2 pb-2">Plus<br/>d'informations</a>
             <h4 class="mr-2">19500€</h4>
           </div>
@@ -329,7 +339,7 @@
       </div>
     
     </section>
-    <footer class="bg-black">
+    <footer class="bg-dark">
     <article id="contactLink" class="container">
       <ul class="d-flex text-center justify-content-around align-items-center mt-5 pt-4">
         <li class="d-flex flex-column align-items-center">
@@ -349,7 +359,7 @@
       </ul>
     </article>
     
-        <ul class="list-unstyled row justify-content-center" id="mention">
+        <ul class="list-unstyled d-flex justify-content-center" id="mention">
           <li>
             <a href="">
               <p class="pBottom mr-3 mt-3">Politique de confidentialité</p>

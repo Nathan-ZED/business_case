@@ -9,7 +9,12 @@ span {
     color: #c26b76;
 }
 
+.active {
+    font-weight: bold;
+}
+
 .box {
+    background: #2b2d42;
     box-shadow: 0px 1px 4px 1px gray;
     border-radius: 30px;
 }
@@ -43,13 +48,14 @@ header {
     background-attachment: fixed;
 }
 
+
 header a {
-    font-size: 13px;
+    font-size: 15px;
     text-decoration: none;
 }
 
 header img {
-    width: 170px;
+    width: 8em;
 }
 
 header ul {
@@ -61,9 +67,10 @@ header div h1 {
     font-family: 'Gilroy-Bold', sans-serif;
     font-size: 4em;
     font-weight: 900;
+    z-index: 2;
 }
 
-header div {
+header #title {
     line-height: 100px;
     margin-top: 12rem;
     padding-bottom: 13.2rem;
@@ -91,9 +98,10 @@ header span {
 }
 
 #search {
-    margin-top: -17rem;
     margin-bottom: 10rem;
     background-attachment: fixed;
+    display: flex;
+    justify-content: flex-end;
 }
 
 #search-box output {
@@ -102,27 +110,31 @@ header span {
 
 #search-box ul li button {
     border: 1px solid #b3293c;
-    background: white;
+    background: #2b2d42;
     font-weight: 550;
-    color: #454545;
+    color: #fff;
     font-size: 15px;
     padding: 10px 78px 10px 70px;
 }
 
 .search-body {
-    background-color: white;
+    background-color: #454545;
     border-radius: 50px;
     padding: 2rem 0rem 0rem 0rem;
 }
 
 #search ul {
-    background: white;
-    margin-top: -18rem;
-    border-radius: 5px;
+    background: #2b2d42;
+    margin-top: -27rem;
+    border-radius: 15px;
 }
 #search .range {
     height: 0.1rem;
     width: 19rem;
+}
+
+.dropdown-menu {
+    width: 17rem;
 }
 
 .btn {
@@ -146,22 +158,21 @@ header span {
     font-family: 'Gilroy-Bold', sans-serif;
 }
 
+#search ul li a:hover {
+    border-radius: 10px;
+    border: 3px solid #a33a3f70;
+}
+
+
 .searchBtn {
-    color: rgb(92, 92, 92);
-    background-color: #fff;
-    border-color: #f3969a;
-    border-left: none;
-    border-top: none;
-    border-right: none;
-    border-radius: 0px;
-    transition: 0.3s ease;
+    color: #a33a40;
+    background: transparent;
+    border: 2px solid #a33a40;
 }
 
 .searchBtn:hover {
-    color: #fff;
-    background-color: #b3293c;
-    border-bottom: 8px solid #ffa7a75d;
-    margin-top: -0.3rem;
+    color: rgba(255, 255, 255, 0.836);
+    background-color: #b3293b23;
     box-shadow: 0px 0px 5px black;
 }
 
@@ -222,6 +233,7 @@ header span {
 }
 
 #who ul img {
+    color: #fff;
     width: 5em;
 }
 
@@ -277,7 +289,7 @@ header span {
 }
 
 #carCard {
-    background: #fff;
+    background: #2b2d42;
     width: 15rem;
     box-shadow: 0px 3px 8px -1px #454545;
     border-radius: 5px;
@@ -357,7 +369,7 @@ header span {
 #contact input[type="text"],
 input[type="email"],
 input[type="textarea"] {
-    background: rgb(43, 43, 43);
+    background: #2b2d42;
     border-top: none;
     border-left: none;
     border-right: none;
@@ -381,7 +393,7 @@ input[type="email"]::placeholder {
 }
 
 #contact textarea {
-    background: rgb(43, 43, 43);
+    background: #2b2d42;
     color: #fff;
     border-top: none;
     border-left: none;
@@ -428,7 +440,7 @@ input[type="email"]:hover {
 
 #contact form {
     margin-top: 2rem;
-    background: rgb(43, 43, 43);
+    background: #2b2d42;
     padding-left: 5rem;
     padding-right: 5rem;
     border-radius: 15px;
@@ -510,14 +522,18 @@ footer a:hover {
         font-size: 2em;
     }
 
-    header div {
+    header #title {
         display: flex;
         text-align: center;
-        margin-top: 4rem;
+        margin-top: 7rem;
     }
 
     #search {
-        margin-top: 0rem;
+        justify-content: center;
+    }
+
+    #search ul {
+        margin-top: -18rem;
     }
 
     #search a[type="button"] {
