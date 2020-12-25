@@ -52,6 +52,7 @@ header {
 header a {
     font-size: 15px;
     text-decoration: none;
+    transition: 0.3s ease;
 }
 
 header img {
@@ -156,11 +157,6 @@ header span {
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     width: 17rem;
     font-family: 'Gilroy-Bold', sans-serif;
-}
-
-#search ul li a:hover {
-    border-radius: 10px;
-    border: 3px solid #a33a3f70;
 }
 
 
@@ -403,7 +399,7 @@ input[type="email"]::placeholder {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 10px;
-    padding-right: 50px;
+    padding-right: 70px;
 }
 
 #contact textarea:focus {
@@ -441,8 +437,8 @@ input[type="email"]:hover {
 #contact form {
     margin-top: 2rem;
     background: #2b2d42;
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     border-radius: 15px;
     box-shadow: 0px 1px 35px 2px gray;
 }
@@ -453,6 +449,10 @@ form h3 {
     font-size: 30px;
     text-transform: uppercase;
     font-weight: 900;
+}
+
+form ol {
+    padding: 0;
 }
 
 #contact input[type="submit"] {
@@ -493,6 +493,16 @@ form h3 {
     color: #b3293c;
 }
 
+footer ol {
+    margin-bottom: 0rem;
+}
+
+footer ol p {
+    margin: 0;
+    padding: 0;
+}
+
+
 footer a {
     text-decoration: none;
     color: #fff;
@@ -525,7 +535,7 @@ footer a:hover {
     header #title {
         display: flex;
         text-align: center;
-        margin-top: 7rem;
+        margin-top: 3rem;
     }
 
     #search {
@@ -533,15 +543,15 @@ footer a:hover {
     }
 
     #search ul {
-        margin-top: -18rem;
+        margin-top: -13rem;
     }
 
     #search a[type="button"] {
-        width: 9rem;
+        width: 15rem;
     }
 
     #search input[type="range"] {
-        width: 9rem;
+        width: 14rem;
     }
 
     #who h1{
