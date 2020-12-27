@@ -33,65 +33,65 @@
         </div>
       </div>
       </nav>
-    <div class="container align-items-center" id="title">
-            <h1 class="text-white w-50 col">Trouvez votre <span>futur vehicule</span></h1>
-    </div>
+      <section id="search" class="container d-flex flex-column justify-content-center align-items-center">
+        <div class="align-items-center" id="title">
+          <h1 class="text-white text-center">Trouvez votre <span>futur vehicule</span></h1>
+  </div>
+        <ul class="list-unstyled d-flex flex-column col-10 col col-sm-8 col-lg-5 text-center justify-content-center mr-1">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white btn mb-2 mt-4 col" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Marque</a>
+          <div class="dropdown-menu bg-dark">
+            <a class="dropdown-item text-white" href="#">Volkswagen</a>
+            <a class="dropdown-item text-white" href="#">Audi</a>
+            <a class="dropdown-item text-white" href="#">Seat</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white btn mb-2 col" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Modèle</a>
+          <div class="dropdown-menu bg-dark">
+            <a class="dropdown-item text-white" href="#">Action</a>
+            <a class="dropdown-item text-white" href="#">Another action</a>
+            <a class="dropdown-item text-white" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white btn mb-2 col" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Carburant</a>
+          <div class="dropdown-menu bg-dark">
+            <a class="dropdown-item text-white" href="#">Action</a>
+            <a class="dropdown-item text-white" href="#">Another action</a>
+            <a class="dropdown-item text-white" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="d-flex flex-column align-items-center">
+          <label class="font-weight-bold text-white mt-4" for="range-year">Année</label>
+          <input type="range" class="range mb-3" id="rangeYear" name="range-year" min="1980" max="2021" step="1" value="2001"/>
+          <output class="font-weight-bold text-white"></output>
+          <div class="d-flex justify-content-between">
+          </div>
+      
+        </li>
+        <li class="d-flex flex-column justify-content-center align-items-center">
+          <label class="font-weight-bold text-white mt-4" for="range-km">Km</label>
+          <input type="range" class="range mb-3" name="range-km" min="0" max="400000" step="20000" value="200000"/>
+          <output class="font-weight-bold text-white"></output>
+        </li>
+        <li class="d-flex flex-column justify-content-center align-items-center">
+          <label class="font-weight-bold text-white mt-4" for="range-price">Prix</label>
+          <input type="range" class="range mb-3" name="range-price" min="1000" max="300000" step="200" value="150000"/>
+          <output class="font-weight-bold text-white mb-4"></output>
+        </li>
+        <li class="text-center">
+          <a type="button" class="btn searchBtn mb-2 mt-2"><i class="fas fa-search"></i> Rechercher</a>
+        </li>
+        <li class="text-center">
+          <a type="button" href="#annonces" class="btn searchBtn mb-5 mt-2"><i class="fas fa-search"></i> Voir les annonces</a>
+        </li>
+      </ul>
+    </section>
+  
     </header>
 
-    <section id="search" class="container d-flex mt-3">
-
-      <ul class="list-unstyled d-flex flex-column col-10 col col-sm-8 col-lg-5 text-center justify-content-center mr-1">
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle text-white btn mb-2 mt-4 col" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Marque</a>
-        <div class="dropdown-menu bg-dark">
-          <a class="dropdown-item text-white" href="#">Volkswagen</a>
-          <a class="dropdown-item text-white" href="#">Audi</a>
-          <a class="dropdown-item text-white" href="#">Seat</a>
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle text-white btn mb-2 col" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Modèle</a>
-        <div class="dropdown-menu bg-dark">
-          <a class="dropdown-item text-white" href="#">Action</a>
-          <a class="dropdown-item text-white" href="#">Another action</a>
-          <a class="dropdown-item text-white" href="#">Something else here</a>
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle text-white btn mb-2 col" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Carburant</a>
-        <div class="dropdown-menu bg-dark">
-          <a class="dropdown-item text-white" href="#">Action</a>
-          <a class="dropdown-item text-white" href="#">Another action</a>
-          <a class="dropdown-item text-white" href="#">Something else here</a>
-        </div>
-      </li>
-      <li class="d-flex flex-column align-items-center">
-        <label class="font-weight-bold text-white mt-4" for="range-year">Année</label>
-        <input type="range" class="range mb-3" id="rangeYear" name="range-year" min="1980" max="2021" step="1" value="2001"/>
-        <output class="font-weight-bold text-white"></output>
-        <div class="d-flex justify-content-between">
-        </div>
-    
-      </li>
-      <li class="d-flex flex-column justify-content-center align-items-center">
-        <label class="font-weight-bold text-white mt-4" for="range-km">Km</label>
-        <input type="range" class="range mb-3" name="range-km" min="0" max="400000" step="20000" value="200000"/>
-        <output class="font-weight-bold text-white"></output>
-      </li>
-      <li class="d-flex flex-column justify-content-center align-items-center">
-        <label class="font-weight-bold text-white mt-4" for="range-price">Prix</label>
-        <input type="range" class="range mb-3" name="range-price" min="1000" max="300000" step="200" value="150000"/>
-        <output class="font-weight-bold text-white mb-4"></output>
-      </li>
-      <li class="text-center">
-        <a type="button" class="btn searchBtn mb-2 mt-2"><i class="fas fa-search"></i> Rechercher</a>
-      </li>
-      <li class="text-center">
-        <a type="button" href="#annonces" class="btn searchBtn mb-5 mt-2"><i class="fas fa-search"></i> Voir les annonces</a>
-      </li>
-    </ul>
-  </section>
-
+  
     <section id="who" class="container">
         <h1 class="text-center text-dark">Comment ça marche ?</h1>
         <ul class="box pt-3 pb-4 d-flex flex-column justify-content-between">
@@ -127,7 +127,7 @@
                 <div>
                     <h3 class="font-weight-bold pt-2">Livraison</h3>
                     <p class="text-white">
-                        Elle etait derriere votre écran et maintenant devant vos yeux, sportive ou citadine, Profitez !
+                        Elle etait derriere votre écran et maintenant devant vos yeux, sportive ou citadine, Profitez en !
                     </p>
                 </div>
             </li>
@@ -136,8 +136,8 @@
 
     <section id="annonces" class="container">
         <h1 class="mb-2 text-center text-dark">Les annonces<br>populaires</h1>
-        <article class="mt-5 row justify-content-between align-items-center">
-            <div id="carCard" class="mb-3">
+        <article class="mt-5 row justify-content-center align-items-center">
+            <div id="carCard" class="mb-3 ml-4 mr-4">
                 <img src="/img/car/exempleCar/front.jpg" alt="image clio rs" />
                 <div id="infoSup" class="d-flex justify-content-around pt-3">
                     <p><i class="fas fa-gas-pump"></i> Essence</p>
@@ -157,7 +157,7 @@
           </div>
         </div>
 
-        <div id="carCard" class="mb-3">
+        <div id="carCard" class="mb-3 ml-4 mr-4">
           <img src="/img/car/exempleCar/front.jpg" alt="image clio rs" />
           <div id="infoSup" class="d-flex justify-content-around pt-3">
             <p><i class="fas fa-gas-pump"></i> Essence</p>
@@ -178,7 +178,7 @@
           </div>
         </div>
 
-        <div id="carCard" class="mb-3">
+        <div id="carCard" class="mb-3 ml-4 mr-4">
           <img src="/img/car/exempleCar/front.jpg" alt="image clio rs" />
           <div id="infoSup" class="d-flex justify-content-around pt-3">
             <p><i class="fas fa-gas-pump"></i> Essence</p>
@@ -199,7 +199,7 @@
           </div>
         </div>
 
-        <div id="carCard" class="mb-3">
+        <div id="carCard" class="mt-3 mb-3 ml-4 mr-4">
           <img src="/img/car/exempleCar/front.jpg" alt="image clio rs" />
           <div id="infoSup" class="d-flex justify-content-around pt-3">
             <p><i class="fas fa-gas-pump"></i> Essence</p>
@@ -220,7 +220,7 @@
           </div>
         </div>
 
-        <div id="carCard" class="mb-3">
+        <div id="carCard" class="mt-3 mb-3 ml-4 mr-4">
           <img src="/img/car/exempleCar/front.jpg" alt="image clio rs" />
           <div id="infoSup" class="d-flex justify-content-around pt-3">
             <p><i class="fas fa-gas-pump"></i> Essence</p>
@@ -241,7 +241,7 @@
           </div>
         </div>
 
-        <div id="carCard" class="mb-3">
+        <div id="carCard" class="mt-3 mb-3 ml-4 mr-4">
           <img src="/img/car/exempleCar/front.jpg" alt="image clio rs" />
           <div id="infoSup" class="d-flex justify-content-around pt-3">
             <p><i class="fas fa-gas-pump"></i> Essence</p>
@@ -262,7 +262,7 @@
           </div>
         </div>
 
-        <div id="carCard" class="mb-3">
+        <div id="carCard" class="mt-3 mb-3 ml-4 mr-4">
           <img src="/img/car/exempleCar/front.jpg" alt="image clio rs" />
           <div id="infoSup" class="d-flex justify-content-around pt-3">
             <p><i class="fas fa-gas-pump"></i> Essence</p>
@@ -283,7 +283,7 @@
           </div>
         </div>
 
-        <div id="carCard" class="mb-3">
+        <div id="carCard" class="mt-3 mb-3 ml-4 mr-4">
           <img src="/img/car/exempleCar/front.jpg" alt="image clio rs" />
           <div id="infoSup" class="d-flex justify-content-around pt-3">
             <p><i class="fas fa-gas-pump"></i> Essence</p>
@@ -302,16 +302,18 @@
             <a href="#" class="cardBtn text-center pl-2 pr-2 pt-2 pb-2">Plus d'informations</a>
             <h4 class="mr-2">19500€</h4>
           </div>
-        </div>
 
-        <a type="button" href="" class="btn searchBtn mt-3 text-uppercase text-center">Plus d'annonces</a>
-        </article>
+      </article>
+    </div>
+    <div class="d-flex justify-content-center">
+    <a type="button" href="" class="btn searchBtn mt-3 text-uppercase text-center">Plus d'annonces</a>
+    </div> 
     </section>
     <div id="contactTitle">
       <h1 class="text-center container">Coordonnées<br><span class="text-danger">&</span><br>Contact</h1>
     </div>
     <section id="contact" class="d-flex align-items-center justify-content-between container">
-      <div class="row align-items-center justify-content-around col-8 col-lg-12">
+      <div class="row align-items-center justify-content-around col">
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.3751816153276!2d4.56377571602325!3d45.50252557910149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f5009ab859e85b%3A0xe8e564bcc85701d1!2sZR%20CAR!5e0!3m2!1sfr!2sfr!4v1603963026805!5m2!1sfr!2sfr" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         <form class="d-flex flex-column text-center justify-content-center mb-5 mt-5" action="" name="contact-form" id="contact-form">
           <h3 class="mb-3">Contactez-nous</h3>
